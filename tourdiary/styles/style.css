@@ -1,0 +1,366 @@
+html, div, a ,h1,h2,h3,h4,h5,h6 {
+    font-family: sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.panel {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e6ddee;
+    width: calc(420px - 20px);
+    height: calc(100% - 20px);
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel a {
+    text-decoration: none;
+}
+
+.logo-wrapper {
+    height: 0px !important;
+    padding: 60px 0;
+    width: 100%;
+    /* position: relative; */
+    /* margin: 0; */
+    /* padding: 0px; */
+    background: url(../images/Banner.png) no-repeat #000;
+    /* background-color: #424e74; */
+    /* padding: 50px 50px 40px 50px; */
+    justify-content: center;
+    border-radius: 4px 4px  0 0;
+}
+/* 
+.logo-wrapper > a{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    color: #fff; 
+}*/
+
+.login-button {
+    /* background-color: #424e74; */
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* float: right; */
+    /* position: absolute; */
+    /* right: 0px; */
+    /* bottom: 0px; */
+}
+
+.login-button > div {
+    /* float: right; */
+}
+
+.login-button img {
+    color: black;
+    cursor: pointer;
+    text-align: right;
+}
+
+.login-button img {
+    width: 40px;
+    /* border: 1px solid #000; */
+    /* padding: 5px; */
+    /* border-radius: 4px; */
+}
+/* 
+.login-button > div:after {
+    clear: both; 
+} */
+
+.section-selector-wrapper {
+    display: flex;
+    box-sizing: border-box;
+    border-top: 1px solid #000; 
+    border-bottom: 1px solid #000;
+}
+
+.section-selector-wrapper > div {
+    width: 50%;
+    text-align: center;
+    padding: 15px 5px;
+    /* border-radius: 10px 10px 0 0; */
+    /* border: 1px solid #000; */
+}
+
+.section-selector-wrapper > div:first-child{
+    border-right: 1px solid #000;
+}
+
+.section-selector-wrapper a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+div.active {
+    background-color: #5b8d27;
+}
+
+
+.dayly-menu, .scheduler-wrapper {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+
+
+.dayly-menu div {
+    padding: 15px 5px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dayly-menu form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dayly-menu input {
+    /* height: 10px; */
+    width: 100%;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 0;
+}
+/* 
+.search-button {
+
+} */
+
+#user-search, #public-search {
+    height: 20px;
+    padding-left: 5px;
+}
+
+#user-name, #public-name {
+    width: 140px;
+}
+
+.add-note, .add-plan {
+    z-index: 1000;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    right: 0;
+    background-color: #e6ddee;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-note > div, .add-plan > div {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.add-note img {
+    height: 50px;
+}
+
+.scheduler-wrapper * {
+    margin: 0;
+    padding: 0;
+}
+
+.scheduler-wrapper ul {
+    list-style: none;
+}
+
+.scheduler-wrapper ul > div {
+    margin: 0 10px;
+    padding: 15px 0;
+}
+
+.scheduler-wrapper li{
+    margin: 0 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #000;    
+    display: flex;
+    justify-content: space-between;
+}
+
+.scheduler-wrapper li > div {
+    margin-left: 10px;
+}
+
+.description > span {
+    display: none;
+}
+
+.crossheir {
+    cursor: crosshair !important;
+}
+
+div.close-wrapper {
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+    float: right;
+}
+
+div.close-wrapper::after {
+    clear: both;
+}
+
+div.close-wrapper:hover {
+    color: grey;
+}
+
+
+
+
+
+
+.screen-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    display: none;
+}
+
+.screen-wrapper > * {
+    background: #fff;
+    width: 500px;
+    height: 90%;
+    margin: 10px auto 10px; 
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: calc(100% - 20px);
+    overflow: auto;
+}
+
+.screen-wrapper textarea{
+    width: 90%;
+    height: 100px;
+}
+
+.screen-wrapper form > div {
+    margin: 10px 0;
+}
+
+.screen-wrapper form ul,.screen-wrapper form ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.screen-wrapper form ul {
+    list-style: none;
+}
+
+.screen-wrapper form ul li {
+    margin: 2px 0;
+}
+
+.screen-wrapper div.buttons-wrapper {
+    float: right;
+
+}
+
+.screen-wrapper div.buttons-wrapper::after {
+    clear: both;
+}
+
+.screen-wrapper div.buttons-wrapper > div {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #e6ddee;
+    border-radius: 4px;
+    margin-top: 5px;
+    border: 1px solid grey;
+}
+
+.screen-wrapper div.button {
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #e6ddee;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+.screen-wrapper div.button::after {
+    clear: both;
+}
+
+ul.photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#addPhotoList span.del-photo {
+    cursor: pointer;
+    color: #000;
+}
+
+#addPhotoList span.del-photo:hover {
+    color: grey;
+}
+
+.photos li{
+    margin: 2px;
+    display: none;
+}
+
+.photos li:nth-child(1),.photos li:nth-child(2) {
+    display: flex !important;
+}
+
+.photos img {
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.detailsButton {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+div#bigPhoto img {
+    margin: 5px;
+    width: calc(100% - 5px);
+}
